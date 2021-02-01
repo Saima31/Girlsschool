@@ -1,0 +1,236 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+ display: flex;
+  
+  background: dodgerblue;
+}
+
+
+ul{
+margin:0px;
+padding: 0px;
+}
+
+.my_menu{
+position:absolute;
+width: 100%;
+height: auto;
+
+}
+
+.menu li{
+    List-style: none;
+width: 120px;
+height: 50px;
+background-color:#2196f3;
+margin-left: 5px;
+text-align: center;
+line-height:50px;
+float: left;
+}
+.menu li:hover{
+ background-color:black;
+}
+
+.menu li a:hover{
+ color:aqua;
+}
+.menu li a{
+color:white;
+display: block;
+text-decrotion: none;
+}
+.logo{
+width:50px;
+}
+
+.logo_li:hover{
+background-color:Sienna !important;
+}
+.logo_li a{
+font-size: 20px;
+background-color:red !important;
+}
+.menu ul li{
+     margin: 0px;
+}
+.menu ul {
+display: none;
+}
+
+.menu li:hover>ul{
+   display: block;
+}
+
+.slider{
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+
+/* section2*/
+.section2{
+display:inline-block;
+width:100%;
+text-align: center;
+}
+.section2 h1{
+margin: 0 auto;
+width:300px;
+font-size: 30px;
+color: red;
+border-bottom:2px solid red;
+}
+.div_section2{
+width: 30%;
+height:300px;
+margin:20px;
+float:left;
+}
+.div_section2 img{
+width: 100%;
+height:100%
+}
+/*footer*/
+.footer{
+width:100%;
+height:400px;
+background-color: black;
+}
+.footer_div{
+width: 25%;
+height: auto;
+margin: 30px;
+float: left;
+}
+.footer_div h1{
+
+color:red;
+}
+.footer_div p{
+color:white;
+}
+.footer_div button{
+margin-top: 30px;
+background-color: red;
+border:none;
+color:white;
+width: 120px;
+height: 50px;
+}
+/* Style all font awesome icons */
+.fa {  
+  padding: 20px;  
+  font-size: 30px;  
+  width: 50px;  
+  text-align: center;  
+  text-decoration: none;
+}
+  /* Add a hover effect if you want */
+.fa:hover {  
+  opacity: 0.7;
+
+
